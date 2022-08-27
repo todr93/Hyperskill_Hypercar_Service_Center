@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+</head>
+<body>
+    <ol>
+        Menu
+        {% for line in menu %}
+        <ul><a href="/get_ticket/{{ line.1 }}">{{ line.0 }}</a></ul>
+        {% endfor %}
+    </ol>
+</body>
+</html>
